@@ -262,7 +262,7 @@ for i in range(0, int(len(maxx)*0.5)):
     tav.append(av)
     dif = maxx[i]-mini[i]
     zdif.append(np.log(dif))
-period = (tav[len(tav)-1]-tav[0])/(len(tav)-1)
+period = (tav[len(tav)-2]-tav[0])/(len(tav)-2)
 freq = 1/period
 
 plt.figure()
