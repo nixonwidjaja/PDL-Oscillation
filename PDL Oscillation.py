@@ -285,7 +285,7 @@ print()
 
 #EXPORT OSCILLATION DATA TO TEXT FILE
 f = open("Oscillation Data.txt","w+")
-f.write('%-10s\t%-10s\t%-7s\t%-10s\t%-10s\t%-14s\t%-20s\n'%("t","z","fps","period (s)","freq (Hz)","damping (1/s)","video name"))
+f.write('%-10s\t%-10s\t%-7s\t%-10s\t%-10s\t%-14s\t%-20s\n'%("t","z","fps","period (s)","freq (Hz)","damping (s)","video name"))
 f.write('%-10s\t%-10s\t%-7s\t%-10s\t%-10s\t%-14s\t%-20s\n'%("s","mm","%.2f" %fps,"%.6f" %period,"%.6f" %freq,"%.6f" %tau,video))
 for i in range(0, len(coor)) :
      f.write('%-10s\t%-10s\t\n'%("%.6f" % t[i], "%.6f" % coor[i]))
